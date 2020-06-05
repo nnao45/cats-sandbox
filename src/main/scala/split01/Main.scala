@@ -1,0 +1,7 @@
+package split01
+
+object Main extends App {
+  val source = """eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJodHRwczpcL1wvaS5teWRvY29tby5jb21cL2lkXC80V2VyeU9rRTNGT3VhMkxLM2pBbDVreXQueUVvQ00ydnF-dzRZZUdvZUU4XyIsImF1ZCI6Im4wMF8wNDcwXzAwMDFfMDAiLCJhenAiOiJuMDBfMDQ3MF8wMDAxXzAwIiwiaXNzIjoiaHR0cHM6XC9cL2NvbmYudXcuZG9jb21vLm5lLmpwXC8iLCJleHAiOjE1NzcyNjkwODAsImlhdCI6MTU3NzI2NTQ4MCwibm9uY2UiOiI5TFpjelQ1X2FZX0RGQmNCaHlqeThlUlVRM2hkZXhzZmptOEREUE1Vc3g4In0.cD0PZgdf30KM_8P67LmIkC__AwkiF8YV-RUA1n9KCQo"""
+  val result = source.split("""\.""", 3)
+  println(result(1))
+}
