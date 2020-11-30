@@ -10,7 +10,7 @@ object Main extends App {
     for {
       _ <- ioa
       _ <- ioioa
-        .flatMap(a => a)
+            .flatMap(a => a)
       _ <- ioa
     } yield ()
 
@@ -20,8 +20,8 @@ object Main extends App {
     for {
       _ <- ioa
       ia <- for {
-        ia <- ioioa
-      } yield ia
+             ia <- ioioa
+           } yield ia
       _ <- ia
       _ <- ioa
     } yield ()

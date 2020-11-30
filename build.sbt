@@ -19,5 +19,6 @@ libraryDependencies ++= Seq(
   "io.circe" %% "circe-parser" % circeVersion,
   "com.twitter" %% "finagle-http" % finagleVersion,
   "io.github.finagle" % "featherbed-core_2.12" % featherbedVersion,
-  "io.github.finagle" % "featherbed-circe_2.12" % featherbedVersion
+  "io.github.finagle" % "featherbed-circe_2.12" % featherbedVersion,
+
 )
